@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Psicólogo</title>
+    <link rel="stylesheet" href="psicologo.css">
+</head>
+<body class="login-body">
+
+<div>
+    <h2 style="text-align:center;margin-bottom:15px;">Inicio de sesión psicólogo</h2>
+
+    <div class="login-contenedor">
+        <div class="login-box">
+            <div class="login-text">
+                <h1>Bienvenido</h1>
+                <p>
+                    Accede al Portal de Salud Mental y Hábitos Emocionales.
+                    Revisa pacientes, emociones, sesiones y notas clínicas.
+                </p>
+            </div>
+
+            <form class="login-form" onsubmit="loginPsicologo(event)">
+                <label>Email</label>
+                <input type="email" id="correo" placeholder="Correo electrónico" required>
+
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Contraseña" required>
+
+                <button type="submit">Ingresar</button>
+                <p id="mensaje" style="color:red;text-align:center;margin-top:10px;"></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="psicologo.js"></script>
+</body>
+</html>
