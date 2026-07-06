@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="psicologo.css">
+</head>
+<body onload="cargarPacientes()">
+
+<div class="layout">
+    <aside class="sidebar">
+        <div class="avatar">PM</div>
+        <h3>Psicología Morales</h3>
+
+        <a href="dashboard-psicologo.html">Dashboard</a>
+        <a class="activo" href="pacientes-psicologo.html">Pacientes</a>
+        <a href="agenda-psicologo.html">Citas</a>
+        <a href="notas-psicologo.html">Notas psicológicas</a>
+    </aside>
+
+    <main class="main">
+        <h2 class="titulo">Pacientes registrados</h2>
+
+        <div class="panel">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Rol</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaPacientes"></tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+<script src="psicologo.js"></script>
+</body>
+</html>
