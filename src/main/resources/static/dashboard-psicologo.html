@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Psicólogo</title>
+    <link rel="stylesheet" href="psicologo.css">
+</head>
+<body onload="cargarDashboardPsicologo()">
+
+<div class="layout">
+    <aside class="sidebar">
+        <div class="avatar">PM</div>
+        <h3>Psicología Morales</h3>
+
+        <a class="activo" href="dashboard-psicologo.html">Dashboard</a>
+        <a href="pacientes-psicologo.html">Pacientes</a>
+        <a href="agenda-psicologo.html">Citas</a>
+        <a href="notas-psicologo.html">Notas psicológicas</a>
+        <a href="login-psicologo.html">Cerrar sesión</a>
+    </aside>
+
+    <main class="main">
+        <div class="topbar">🔍 🔔 🟣</div>
+
+        <h2 class="titulo">Hola Mauro Psicólogo</h2>
+
+        <div class="cards">
+            <div class="card">
+                👥
+                <h2 id="totalPacientes">0</h2>
+                <span>Pacientes</span>
+            </div>
+
+            <div class="card">
+                🧪
+                <h2 id="totalEmociones">0</h2>
+                <span>Registros emocionales</span>
+            </div>
+
+            <div class="card">
+                📅
+                <h2 id="totalSesiones">0</h2>
+                <span>Citas agendadas</span>
+            </div>
+
+            <div class="card">
+                📝
+                <h2 id="totalNotas">0</h2>
+                <span>Notas registradas</span>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="card acciones">
+                <h3>Acciones rápidas</h3><br>
+                <button onclick="location.href='pacientes-psicologo.html'">Nuevo paciente</button>
+                <button onclick="location.href='agenda-psicologo.html'">Ver agenda</button>
+                <button onclick="location.href='notas-psicologo.html'">Notas psicológicas</button>
+            </div>
+
+            <div class="card">
+                <h3>Tests favoritos</h3><br>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                    </tr>
+                    <tr>
+                        <td>GAD-7</td>
+                        <td>Ansiedad</td>
+                        <td>Activo</td>
+                        <td><button class="btn">Aplicar</button></td>
+                    </tr>
+                    <tr>
+                        <td>BAI</td>
+                        <td>Ansiedad</td>
+                        <td>Activo</td>
+                        <td><button class="btn">Aplicar</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="psicologo.js"></script>
+</body>
+</html>
