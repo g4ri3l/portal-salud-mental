@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #000;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 32px;
+    margin: 10px 0 25px;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px 20px;
+}
+
+header h2 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5d3b9c;
+    border: 1px solid #d8c9f2;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    background: white;
+}
+
+nav a:hover {
+    background: #eee6ff;
+}
+
+.hero {
+    margin: 0 15px;
+    background: #dce1ea;
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto {
+    width: 45%;
+}
+
+.texto h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.texto p {
+    width: 330px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.imagen {
+    width: 380px;
+    height: 380px;
+    background: #ffd873;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cerebro {
+    font-size: 180px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin: 25px 0;
+    font-size: 15px;
+}
+
+footer::after {
+    content: "";
+    display: block;
+    height: 60px;
+    background: #dddddd;
+    margin: 25px 10px 0;
+}

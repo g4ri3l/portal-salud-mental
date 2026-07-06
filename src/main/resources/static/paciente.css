@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f2f7;
+    color: #222;
+}
+
+.header {
+    height: 70px;
+    background: #6d5f7d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+}
+
+.header h2 {
+    font-size: 24px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    background: #8b7aa0;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    background: white;
+    color: #6d5f7d;
+}
+
+.contenedor {
+    width: 85%;
+    margin: 35px auto;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5d4b73;
+}
+
+.formulario {
+    max-width: 520px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    background: #6d5f7d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4d3f5f;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.opcion {
+    text-align: center;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.opcion span {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.login-body {
+    background: #6d6678;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 850px;
+    height: 460px;
+    background: #9c91aa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.login-text {
+    width: 40%;
+    color: white;
+}
+
+.login-text h1 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.login-form {
+    width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.mensaje {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}

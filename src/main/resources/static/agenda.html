@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda de Citas</title>
+    <link rel="stylesheet" href="paciente.css">
+</head>
+<body>
+
+<header class="header">
+    <h2>Agenda de Citas</h2>
+    <div class="nav">
+        <a href="dashboard-paciente.html">Panel</a>
+        <a href="index.html">Inicio</a>
+    </div>
+</header>
+
+<div class="contenedor">
+    <div class="card">
+        <h1 class="titulo">Agendar Cita Psicológica</h1>
+
+        <form class="formulario" onsubmit="registrarSesion(event)">
+            <label>ID del Psicólogo</label>
+            <input type="text" id="psicologoId" placeholder="Pega aquí el ID del psicólogo" required>
+
+            <label>Fecha y hora</label>
+            <input type="datetime-local" id="fechaHora" required>
+
+            <button type="submit">Agendar Cita</button>
+        </form>
+    </div>
+</div>
+
+<script src="paciente.js"></script>
+</body>
+</html>

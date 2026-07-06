@@ -1,5 +1,9 @@
 package com.portalsaludmental.spring.app.repository;
 
-public class EmocionRepository {
-    
+import com.portalsaludmental.spring.app.model.Emocion;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import java.util.List;
+
+public interface EmocionRepository extends MongoRepository<Emocion, String> {
+    List<Emocion> findByUsuarioId(String usuarioId);
 }

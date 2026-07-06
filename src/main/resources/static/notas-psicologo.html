@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Notas del Psicólogo</title>
+    <link rel="stylesheet" href="psicologo.css">
+</head>
+<body onload="cargarNotasPsicologo()">
+
+<div class="main">
+    <h2 class="titulo" style="text-align:center;">Notas del psicólogo</h2>
+
+    <div class="panel">
+        <table>
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Fecha</th>
+                    <th>Paciente</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tablaNotas"></tbody>
+        </table>
+
+        <div class="footer-notas">
+            <div>
+                <b>Nosotros</b><br>
+                +56983168268
+            </div>
+            <div>
+                <b>Información</b><br>
+                Sucursales<br>
+                Políticas de reembolso<br>
+                Métodos de pago
+            </div>
+            <div>
+                <b>Mi cuenta</b><br>
+                Editar información<br>
+                Mis reservas
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <button class="btn" onclick="location.href='dashboard-psicologo.html'">Volver</button>
+</div>
+
+<script src="psicologo.js"></script>
+</body>
+</html>

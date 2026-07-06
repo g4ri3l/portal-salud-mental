@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio Sesión Paciente</title>
+    <link rel="stylesheet" href="paciente.css">
+</head>
+<body class="login-body">
+
+<div class="login-box">
+    <div class="login-text">
+        <h1>Bienvenido</h1>
+        <p>
+            Accede al Portal de Salud Mental y Hábitos Emocionales.
+            Registra tus emociones, monitorea tu bienestar y recibe seguimiento profesional.
+        </p>
+    </div>
+
+    <form class="login-form" onsubmit="loginPaciente(event)">
+        <h2>Iniciar Sesión</h2>
+
+        <label>Correo</label>
+        <input type="email" id="correo" required>
+
+        <label>Contraseña</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Ingresar</button>
+
+        <p class="mensaje" id="mensaje"></p>
+
+        <p style="margin-top:15px;text-align:center;">
+            <a href="registro.html">Crear cuenta</a>
+        </p>
+    </form>
+</div>
+
+<script src="paciente.js"></script>
+</body>
+</html>

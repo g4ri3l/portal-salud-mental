@@ -1,5 +1,9 @@
 package com.portalsaludmental.spring.app.repository;
 
-public class NotaRepository {
-    
+import com.portalsaludmental.spring.app.model.Nota;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import java.util.List;
+
+public interface NotaRepository extends MongoRepository<Nota, String> {
+    List<Nota> findByUsuarioId(String usuarioId);
 }

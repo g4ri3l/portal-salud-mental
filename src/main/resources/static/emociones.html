@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Emociones</title>
+    <link rel="stylesheet" href="paciente.css">
+</head>
+<body>
+
+<header class="header">
+    <h2>Registro Emocional</h2>
+    <div class="nav">
+        <a href="dashboard-paciente.html">Panel</a>
+        <a href="index.html">Inicio</a>
+    </div>
+</header>
+
+<div class="contenedor">
+    <div class="card">
+        <h1 class="titulo">¿Cómo te sientes hoy?</h1>
+
+        <form class="formulario" onsubmit="registrarEmocion(event)">
+            <label>Estado emocional</label>
+            <select id="estado" required>
+                <option value="Muy feliz">😊 Muy feliz</option>
+                <option value="Feliz">🙂 Feliz</option>
+                <option value="Neutral">😐 Neutral</option>
+                <option value="Triste">😢 Triste</option>
+                <option value="Ansioso">😰 Ansioso</option>
+            </select>
+
+            <label>Comentario</label>
+            <textarea id="comentario" placeholder="¿Qué te hizo sentir así?"></textarea>
+
+            <button type="submit">Guardar Registro</button>
+        </form>
+    </div>
+</div>
+
+<script src="paciente.js"></script>
+</body>
+</html>
